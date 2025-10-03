@@ -21,3 +21,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('check_ins/', include('check_ins.urls')),
 ]
+
