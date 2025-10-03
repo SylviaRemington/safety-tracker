@@ -1,7 +1,7 @@
 from django.db import models
 
-# Create your models here - Creating my Checkins Model
-class Check_Ins(models.Model):
+# Create your models here - Creating my Check_In Model
+class Check_In(models.Model):
   def __str__(self):
     return f'{self.title} - {self.category}'
   title = models.CharField(max_length=80, unique=True)
@@ -11,9 +11,9 @@ class Check_Ins(models.Model):
   coping_action = models.CharField(max_length=60)
   effectiveness = models.FloatField()
 
-# Alternate Checkins Model I could use as per researching (for future when I want to make it more accurate; however, maybe not use blank=True):
-# Create my Checkins Model
-# class Checkins(models.Model):
+# Alternate Check_In Model I could use as per researching (for future when I want to make it more accurate; however, maybe not use blank=True):
+# Create my Check_In Model
+# class Check_In(models.Model):
 #   def __str__(self):
 #     return f'{self.description} - {self.category}'
 #   description = models.CharField(max_length=5000)

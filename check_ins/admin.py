@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+# Registering my models here.
+# This is where I'm importing the Check_In
+from .models import Check_In
