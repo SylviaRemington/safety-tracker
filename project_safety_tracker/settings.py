@@ -20,7 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = THIS IS A FAKE SECURITY KEY AS A PLACEHOLDER 'django-insecure-_)si4ge_8vs(e8=yxsk96(nve8g&xjnsy)fca7-6c-b@5ozb(h'
+SECRET_KEY ='django-insecure-_)si4ge_8vs(e8=yxsk96(nve8g&xjnsy)fca7-6c-b@5ozb(h'
+# ! The secret key above is a fake secret key that is used to set up the backend via my student lectures as per my teacher. This part of the set up my teacher Tristan Hall gave us & he will show us about using a way to hide an actual pswd later.
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -72,10 +73,12 @@ WSGI_APPLICATION = 'project_safety_tracker.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
+DATABASES = { # added this to use postgres as the database instead of the default sqlite. do this before running the initial migrations or you will need to do it again
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'safetytracker-api',
+        'HOST': 'localhost',
+        'PORT': 5432
     }
 }
 
