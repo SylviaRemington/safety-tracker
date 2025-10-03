@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here - Creating my Checkins Model
-class Checkins(models.Model):
+class Check_Ins(models.Model):
   def __str__(self):
     return f'{self.title} - {self.category}'
   title = models.CharField(max_length=80, unique=True)
