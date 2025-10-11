@@ -12,7 +12,7 @@ from .serializers import Check_InSerializer
 class Check_InListView(APIView):
 
   def get(self, _request):
-    films = Check_In.objects.all()
-    serialized_check_ins = Check_InSerializer(films, many=True)
+    check_ins = Check_In.objects.all()
+    serialized_check_ins = Check_InSerializer(check_ins, many=True)
     return Response(serialized_check_ins.data, status=status.HTTP_200_OK)
   
