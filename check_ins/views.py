@@ -16,3 +16,4 @@ class Check_InListView(APIView):
     serialized_check_ins = Check_InSerializer(check_ins, many=True)
     return Response(serialized_check_ins.data, status=status.HTTP_200_OK)
   
+  
