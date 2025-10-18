@@ -4,4 +4,8 @@ This api was initially created and worked on prior to us finishing our complete 
 
 Ultimately, this beginning of an api was just practice before I created the real thing!
 
+<hr>
+
 **This version was only Part One Setup - from Tristan Hall's initial lesson from django-books-api.**
+
+<hr>
